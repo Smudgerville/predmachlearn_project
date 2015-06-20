@@ -26,7 +26,52 @@ The data for this project come from this source: http://groupware.les.inf.puc-ri
 
 What you should submit
 
-The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases. 
+The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing
+
+## How you built your model
+## How you used cross validation
+## What you think the expected out of sample error is
+## Why you made the choices you did.
+
+[from here](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/004inOutSampleErrors/#2)
+
+In Sample Error: The error rate you get on the same data set you used to build your predictor. Sometimes called resubstitution error.
+
+Out of Sample Error: The error rate you get on a new data set. Sometimes called generalization error.
+
+Methods for model creation?
+- Linear discriminant analysis
+- Regression
+- Naive Bayes
+- Support vector machines
+- Classification and regression trees
+- Random forests
+- Boosting
+etc.
+
+
+- ROC Curves - binary classification but predictions often quantitative
+
+?createTimeSlices
+
+[For time series data, data must be used in "chunks"](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/008crossValidation/#8)
+
+This human activity recognition research has traditionally focused on discriminating between different activities, i.e. to predict "which" activity was performed at a specific point in time (like with the Daily Living Activities dataset above). The approach we propose for the Weight Lifting Exercises dataset is to investigate "how (well)" an activity was performed by the wearer. The "how (well)" investigation has only received little attention so far, even though it potentially provides useful information for a large variety of applications,such as sports training.
+
+In this work (see the paper) we first define quality of execution and investigate three aspects that pertain to qualitative activity recognition: the problem of specifying correct execution, the automatic and robust detection of execution mistakes, and how to provide feedback on the quality of execution to the user. We tried out an on-body sensing approach (dataset here), but also an "ambient sensing approach" (by using Microsoft Kinect - dataset still unavailable)
+
+Six young health participants were asked to perform one set of 10 repetitions of the Unilateral Dumbbell Biceps Curl in five different fashions: exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), lowering the dumbbell only halfway (Class D) and throwing the hips to the front (Class E).
+
+Class A corresponds to the specified execution of the exercise, while the other 4 classes correspond to common mistakes. Participants were supervised by an experienced weight lifter to make sure the execution complied to the manner they were supposed to simulate. The exercises were performed by six male participants aged between 20-28 years, with little weight lifting experience. We made sure that all participants could easily simulate the mistakes in a safe and controlled manner by using a relatively light dumbbell (1.25kg).
+
+
+
+Read more: http://groupware.les.inf.puc-rio.br/har#weight_lifting_exercises#ixzz3dXWbtX4h
+
+
+
+Read more: http://groupware.les.inf.puc-rio.br/har#dataset#ixzz3dXWNspug
+
 
 1. Your submission should consist of a link to a Github repo with your R markdown and compiled HTML file describing your analysis. Please constrain the text of the writeup to < 2000 words and the number of figures to be less than 5. It will make it easier for the graders if you submit a repo with a gh-pages branch so the HTML page can be viewed online (and you always want to make it easy on graders :-).
 2. You should also apply your machine learning algorithm to the 20 test cases available in the test data above. Please submit your predictions in appropriate format to the programming assignment for automated grading. See the programming assignment for additional details. 
@@ -34,3 +79,12 @@ The goal of your project is to predict the manner in which they did the exercise
 Reproducibility 
 
 Due to security concerns with the exchange of R code, your code will not be run during the evaluation by your classmates. Please be sure that if they download the repo, they will be able to view the compiled HTML version of your analysis. 
+
+
+## Evaluation / feedback
+
+- Has the student submitted a github repo?
+- Does the submission build a machine learning algorithm to predict activity quality from activity monitors?
+- Do the authors describe what they expect the out of sample error to be and estimate the error appropriately with cross-validation?
+- Please use the space below to provide constructive feedback to the student who submitted the work. Point out the submission's strengths and identify some areas for improvement. You may also use this space to explain your grading decisions.
+- As far as you can determine, does it appear that the work submitted for this project is the work of the student who submitted it? 
